@@ -51,11 +51,11 @@ class CoinListModelController {
                                 coins.append(parsedCoin) }
                             }
                         }
+           completion(true)
             } catch {
                 print("There was an error in Do-Try-Catch: \(error.localizedDescription)")
                 completion(false)
             }
-                
         }.resume()
         }
     }
